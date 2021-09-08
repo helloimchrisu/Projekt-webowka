@@ -1,0 +1,54 @@
+body {
+    margin :0; }
+ 
+
+
+    #header-bar {
+    background-color: black;
+    height: 8px;
+}
+#main {
+    margin: 0 auto;
+    display:grid;
+    width: 1200px;
+    grid-template-columns: 1000px 200px;
+    grid-template-areas: 
+    "header header"
+    "main rside"
+    "footer footer";
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(223, 221, 221);
+    grid-area: header;
+
+    
+}
+#header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    
+    }
+a:hover {
+ font-size: 150%;
+}
+#about-site{
+    display: flex;
+    margin: 0 auto;
+    grid-area: main;
+}
+section {
+    grid-area: rside;
+}
+#footer {
+    height: 150px;
+background-color: black;
+margin-top: 20px;
+grid-area: footer;
+}
